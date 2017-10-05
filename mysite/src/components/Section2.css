@@ -1,0 +1,48 @@
+
+
+
+#section2 {
+	background-color: #bbddff;
+}
+
+
+#jumbotron {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 2em;
+	border-radius: 0.5em;
+}
+
+#jumbotron h4, #jumbotron3 h4, #jumbotron4 h4, #jumbotron5 h4 {
+	text-align: left;
+}
+
+#jumbotron div {
+	font-size: 1.1em;
+}
+
+
+#jumbotron2, #jumbotron3, #jumbotron4, #jumbotron5 {
+	max-width: 40em;
+	margin: 3em auto;
+	padding: 2em;
+	border-radius: 0.5em;
+}
+
+#jumbotron2 i, #jumbotron3 i {
+	opacity: 0.5;
+}
+
+
+#jumbotron3 b {
+	font-size: 1.2em;
+}
+
+
+#langDiv1, #langDiv2 {
+	margin: 0.5em auto;
+}
+
+i.fa-star {
+	color: #CCCC00;
+}

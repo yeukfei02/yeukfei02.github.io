@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 import './NavBar.css';
 
@@ -14,14 +14,11 @@ class NavBar extends Component {
 	      <Navbar.Toggle />
 	    </Navbar.Header>
 	    <Navbar.Collapse>
-	      <Nav>
-	        <NavItem eventKey={1} href="#">Home</NavItem>
-	        <NavItem eventKey={2} href="#">About</NavItem>
-	      </Nav>
-	      <Nav pullRight>
-	        <NavItem eventKey={1} href="#">Home</NavItem>
-	        <NavItem eventKey={2} href="#">About</NavItem>
-	      </Nav>
+	      {/*<Nav pullRight>
+	        <NavItem eventKey={1} href="/">Home</NavItem>
+	        <NavItem eventKey={2} href="/about">About</NavItem>
+	        <NavItem eventKey={3} href="/contact">Contact</NavItem>
+	      </Nav>*/}
 	    </Navbar.Collapse>
 	  </Navbar>
     );

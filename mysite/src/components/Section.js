@@ -1,9 +1,31 @@
 import React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 
+import '../../node_modules/animate.css/animate.min.css';
 import './Section.css';
 
 class Section extends Component {
+  componentDidMount() {
+    window.addEventListener('load', this.imageAnimate);
+  }
+
+  imageAnimate() {
+    var image = document.querySelector('#image');
+    image.className += ' animated bounceInUp';
+
+  }
+
+  mouseEnterImage() {
+    var image = document.querySelector('#image');
+    image.style.cursor = 'pointer';
+  }
+
+  clickImage() {
+    var image = document.querySelector('#image');
+    image.className -= ' animated bounceInUp';
+    image.className += ' img-responsive img-circle animated zoomIn';
+  }
+
   clickFacebook() {
   	window.open('https://www.facebook.com/yeukfei02');
   }
@@ -27,8 +49,8 @@ class Section extends Component {
   render() {
     return (
     	<section>
-    		<Image id="image" src="https://lh4.googleusercontent.com/-NfdeLMWx1fs/U8DWKAQH3RI/AAAAAAAAAfs/Hfu2SlsS6dQ/s1230-no/profile.jpg" circle responsive />
-    		<h1>Wu Yeuk Fei (Donald)</h1>
+    		<Image id="image" src="https://lh4.googleusercontent.com/-NfdeLMWx1fs/U8DWKAQH3RI/AAAAAAAAAfs/Hfu2SlsS6dQ/s1230-no/profile.jpg" circle responsive onClick={this.clickImage} onMouseEnter={this.mouseEnterImage} />
+    		<h2>Wu Yeuk Fei (Donald)</h2>
     		<h3>Developer</h3>
     		<h4>Skype id: yeukfei02</h4>
     		<div id="socialIcons">

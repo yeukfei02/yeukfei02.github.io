@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 
+import NavBar from './NavBar';
 import Section from './Section';
-import Section2 from './Section2';
+import About from './About';
 
 class App extends Component {
   render() {
     return (
       <div>
+      	<NavBar/>
         <Section/>
-        <Section2/>
+        <About/>
       </div>
     );
   }

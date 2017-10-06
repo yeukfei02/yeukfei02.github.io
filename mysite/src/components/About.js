@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Jumbotron, ProgressBar } from 'react-bootstrap';
 
-import './Section2.css';
+import './About.css';
 
-class Section2 extends Component {
+class About extends Component {
   openPage() {
-    window.open('http://yeukfei02.com');
+    window.open('https://yeukfei02.github.io');
   }
 
   render() {
     return (
-    	<section id="section2">
+    	<section id="about">
     		<Jumbotron id="jumbotron">
                 <h4>About me</h4>
                 <div>My name is Wu Yeuk Fei, Donald. I graduated from Nanyang Technological University for my master and City University of Hong Kong for my bachelor. My major is Information Systems.</div><br/>
@@ -23,7 +23,7 @@ class Section2 extends Component {
                 <i class="fa fa-map-marker fa-lg"></i>&nbsp;&nbsp;Hong Kong<br/><br/>
                 <i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;Hong Kong<br/><br/>
                 <i class="fa fa-envelope-o fa-lg"></i>&nbsp;&nbsp;yeukfei02@gmail.com<br/><br/>
-                <i class="fa fa-link fa-lg"></i>&nbsp;&nbsp;<span onClick={this.openPage}>http://yeukfei02.com</span>
+                <i class="fa fa-link fa-lg"></i>&nbsp;&nbsp;<span onClick={this.openPage}>yeukfei02.github.io</span>
             </Jumbotron>
 
             <Jumbotron id="jumbotron3">
@@ -68,7 +68,7 @@ class Section2 extends Component {
   }
 }
 
-export default Section2;
+export default About;
 
 
 

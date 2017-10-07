@@ -12,3 +12,7 @@ My personal website
 ```$ yarn start``` 
 
 start the web in http://localhost:3000
+
+```$ yarn run build```
+
+create ```build``` folder for production

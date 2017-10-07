@@ -13,6 +13,6 @@ My personal website
 
 start the web in http://localhost:3000
 
-```$ yarn run build```
+```$ yarn build```
 
 create ```build``` folder for production

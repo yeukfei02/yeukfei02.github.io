@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 
-import '../../node_modules/animate.css/animate.min.css';
+import '../../../node_modules/animate.css/animate.min.css';
 import './Section.css';
 
 class Section extends Component {
@@ -10,18 +10,18 @@ class Section extends Component {
   }
 
   imageAnimate() {
-    var image = document.querySelector('#image');
+    let image = document.querySelector('#image');
     image.className += ' animated bounceInUp';
 
   }
 
   mouseEnterImage() {
-    var image = document.querySelector('#image');
+    let image = document.querySelector('#image');
     image.style.cursor = 'pointer';
   }
 
   clickImage() {
-    var image = document.querySelector('#image');
+    let image = document.querySelector('#image');
     image.className -= ' animated bounceInUp';
     image.className += ' img-responsive img-circle animated zoomIn';
   }

@@ -5,14 +5,16 @@ My personal website
  - Install yarn
 
 ### Testing and run:
-```$ cd mysite ```
-
-```$ yarn ``` or ```$ yarn install``` 
-
-```$ yarn start``` 
+```
+$ cd mysite
+$ yarn
+$ yarn start
+```
 
 start the web in http://localhost:3000
 
-```$ yarn build```
+```
+$ yarn build
+```
 
 create ```build``` folder for production

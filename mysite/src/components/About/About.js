@@ -45,7 +45,7 @@ class About extends Component {
                 <div>JavaScript (AngularJS, React.js, Node.js)</div>
                 <ProgressBar bsStyle="success" now={90} />
 
-                <div>Java (Android)</div>
+                <div>Java (Android, Kotlin)</div>
                 <ProgressBar bsStyle="success" now={80} />
 
                 <div>CSS (SASS)</div>

@@ -11,10 +11,10 @@ class About extends Component {
   render() {
     return (
     	<section id="about">
-    		<Jumbotron id="jumbotron">
+    		    <Jumbotron id="jumbotron">
                 <h4>About me</h4>
-                <div>My name is Wu Yeuk Fei, Donald. I graduated from Nanyang Technological University for my master and City University of Hong Kong for my bachelor. My major is Information Systems.</div><br/>
-                <div>I found I like programming when I was studying in my final year. Developing application could be interesting and fun, at least I get satisfied after I created something that can help others in their life.</div><br/>
+                <div>My name is Wu Yeuk Fei, Donald. I graduate from Nanyang Technological University for my master and City University of Hong Kong for my bachelor. My major is Information Systems.</div><br/>
+                <div>I find I like programming when I studied in my final year. Developing application could be interesting and fun, at least I satisfy after I solve problem and create something that useful for others.</div><br/>
                 <div>I write web apps, mobile apps and games.</div><br/>
                 <div>Email me and I will tell you more :)</div>
             </Jumbotron>
@@ -42,7 +42,7 @@ class About extends Component {
             <Jumbotron id="jumbotron5">
                 <h4>Computer skills</h4>
 
-                <div>JavaScript (AngularJS, React.js, Node.js)</div>
+                <div>JavaScript (React.js, Node.js)</div>
                 <ProgressBar bsStyle="success" now={90} />
 
                 <div>Java (Android, Kotlin)</div>
@@ -69,7 +69,3 @@ class About extends Component {
 }
 
 export default About;
-
-
-
-

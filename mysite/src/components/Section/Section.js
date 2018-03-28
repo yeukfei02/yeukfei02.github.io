@@ -53,6 +53,7 @@ class Section extends Component {
     		<h2>Wu Yeuk Fei (Donald)</h2>
     		<h3>Developer</h3>
     		<h4>Skype id: yeukfei02</h4>
+        <h4>Angellist: angel.co/yeukfei02</h4>
     		<div id="socialIcons">
     			<span id="facebook" class="fa-stack fa-lg" onClick={this.clickFacebook}>
 	            	<i class="fa fa-circle fa-stack-2x"></i>
@@ -87,7 +88,3 @@ class Section extends Component {
 }
 
 export default Section;
-
-
-
-

@@ -22,7 +22,7 @@ class About extends Component {
             <h4>About me</h4>
             <div style={{ fontSize: '1.1em' }}>My name is Wu Yeuk Fei, Donald. I graduate from Nanyang Technological University for my master and City University of Hong Kong for my bachelor. My major is Information Systems.</div><br/>
             <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. Developing application could be interesting and fun, at least I satisfy after I solve problem and create something that useful for others.</div><br/>
-            <div style={{ fontSize: '1.1em' }}>I write web apps, mobile apps and games.</div><br/>
+            <div style={{ fontSize: '1.1em' }}>I write web, android.</div><br/>
             <div style={{ fontSize: '1.1em' }}>Email me and I will tell you more :)</div>
         </Jumbotron>
 

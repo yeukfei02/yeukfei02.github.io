@@ -1,68 +1,78 @@
 import React, { Component } from 'react';
 import { Jumbotron, ProgressBar } from 'react-bootstrap';
 
-import './About.css';
-
 class About extends Component {
-  openPage() {
+  handleOpenLink = () => {
     window.open('https://yeukfei02.github.io');
+  }
+
+  handleMouseEnterLink = (e) => {
+    e.target.style.opacity = '0.7';
+    e.target.style.cursor = 'pointer';
+  }
+
+  handleMouseLeaveLink = (e) => {
+    e.target.style.opacity = '0.3';
   }
 
   render() {
     return (
-    	<section id="about">
-    		    <Jumbotron id="jumbotron">
-                <h4>About me</h4>
-                <div>My name is Wu Yeuk Fei, Donald. I graduate from Nanyang Technological University for my master and City University of Hong Kong for my bachelor. My major is Information Systems.</div><br/>
-                <div>I find I like programming when I studied in my final year. Developing application could be interesting and fun, at least I satisfy after I solve problem and create something that useful for others.</div><br/>
-                <div>I write web apps, mobile apps and games.</div><br/>
-                <div>Email me and I will tell you more :)</div>
-            </Jumbotron>
+    	<section style={{ padding: '2em', backgroundColor: '#bbddff' }}>
+		    <Jumbotron style={{ maxWidth: '40em', margin: '0 auto', padding: '2em', borderRadius: '0.5em'}}>
+            <h4>About me</h4>
+            <div style={{ fontSize: '1.1em' }}>My name is Wu Yeuk Fei, Donald. I graduate from Nanyang Technological University for my master and City University of Hong Kong for my bachelor. My major is Information Systems.</div><br/>
+            <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. Developing application could be interesting and fun, at least I satisfy after I solve problem and create something that useful for others.</div><br/>
+            <div style={{ fontSize: '1.1em' }}>I write web apps, mobile apps and games.</div><br/>
+            <div style={{ fontSize: '1.1em' }}>Email me and I will tell you more :)</div>
+        </Jumbotron>
 
-            <Jumbotron id="jumbotron2">
-                <i class="fa fa-map-marker fa-lg"></i>&nbsp;&nbsp;Hong Kong<br/><br/>
-                <i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;Hong Kong<br/><br/>
-                <i class="fa fa-envelope-o fa-lg"></i>&nbsp;&nbsp;yeukfei02@gmail.com<br/><br/>
-                <i class="fa fa-link fa-lg"></i>&nbsp;&nbsp;<span onClick={this.openPage}>yeukfei02.github.io</span>
-            </Jumbotron>
+        <Jumbotron style={{maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em'}}>
+            <i className="fa fa-map-marker fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;Hong Kong<br/><br/>
+            <i className="fa fa-home fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;Hong Kong<br/><br/>
+            <i className="fa fa-envelope-o fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;yeukfei02@gmail.com<br/><br/>
+            <i className="fa fa-link fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;<span style={{ opacity: '0.3' }} onClick={this.handleOpenLink} onMouseEnter={(e) => this.handleMouseEnterLink(e)} onMouseLeave={(e) => this.handleMouseLeaveLink(e)}>yeukfei02.github.io</span>
+        </Jumbotron>
 
-            <Jumbotron id="jumbotron3">
-                <h4>Education</h4>
-                <i class="fa fa-graduation-cap fa-lg"></i>&nbsp;&nbsp;<b>Nanyang Technological University</b><div>MSc (Information Systems)</div><br/>
-                <i class="fa fa-graduation-cap fa-lg"></i>&nbsp;&nbsp;<b>City University of Hong Kong</b><div>BBA (Information Management)</div>
-            </Jumbotron>
+        <Jumbotron style={{maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em'}}>
+            <h4>Education</h4>
+            <i className="fa fa-graduation-cap fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;<b style={{ fontSize: '1.2em' }}>Nanyang Technological University</b><div>MSc (Information Systems)</div><br/>
+            <i className="fa fa-graduation-cap fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;<b style={{ fontSize: '1.2em' }}>City University of Hong Kong</b><div>BBA (Information Management)</div>
+        </Jumbotron>
 
-            <Jumbotron id="jumbotron4">
-                <h4>Languages</h4>
-                <div id="langDiv1">English&nbsp;&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star-o fa-lg"></i>&nbsp;<i class="fa fa-star-o fa-lg"></i></div>
-                <div id="langDiv2">Cantonese&nbsp;&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i></div>
-                <div id="langDiv3">Mandarin&nbsp;&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star fa-lg"></i>&nbsp;<i class="fa fa-star-o fa-lg"></i></div>
-            </Jumbotron>
+        <Jumbotron style={{maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em'}}>
+            <h4>Languages</h4>
+            <div style={{ margin: '0.5em auto' }}>English&nbsp;&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star-o fa-lg"></i>&nbsp;<i className="fa fa-star-o fa-lg"></i></div>
+            <div style={{ margin: '0.5em auto' }}>Cantonese&nbsp;&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i></div>
+            <div>Mandarin&nbsp;&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star-o fa-lg"></i></div>
+        </Jumbotron>
 
-            <Jumbotron id="jumbotron5">
-                <h4>Computer skills</h4>
+        <Jumbotron style={{maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em'}}>
+            <h4>Computer skills</h4>
 
-                <div>JavaScript (React.js, Node.js)</div>
-                <ProgressBar bsStyle="success" now={90} />
+            <div>JavaScript (React.js, Node.js)</div>
+            <ProgressBar bsStyle="success" now={90} />
 
-                <div>Java (Android, Kotlin)</div>
-                <ProgressBar bsStyle="success" now={80} />
+            <div>Java (Android, Kotlin)</div>
+            <ProgressBar bsStyle="success" now={85} />
 
-                <div>CSS (SASS)</div>
-                <ProgressBar bsStyle="success" now={70} />
+            <div>Python</div>
+            <ProgressBar bsStyle="success" now={30} />
 
-                <div>MySQL</div>
-                <ProgressBar bsStyle="warning" now={60} />
+            <div>CSS (SASS)</div>
+            <ProgressBar bsStyle="success" now={75} />
 
-                <div>Oracle</div>
-                <ProgressBar bsStyle="warning" now={50} />
+            <div>MySQL</div>
+            <ProgressBar bsStyle="warning" now={60} />
 
-                <div>MongoDB</div>
-                <ProgressBar bsStyle="warning" now={30} />
+            <div>Oracle</div>
+            <ProgressBar bsStyle="warning" now={60} />
 
-                <div>Unix Shell Scripting</div>
-                <ProgressBar bsStyle="danger" now={20} />
-            </Jumbotron>
+            <div>MongoDB</div>
+            <ProgressBar bsStyle="warning" now={50} />
+
+            <div>Unix Shell Scripting</div>
+            <ProgressBar bsStyle="danger" now={30} />
+        </Jumbotron>
     	</section>
     );
   }

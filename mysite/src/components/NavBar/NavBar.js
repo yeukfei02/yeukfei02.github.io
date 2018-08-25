@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
 
-import './NavBar.css';
-
-class NavBar extends Component {	
+class NavBar extends Component {
   render() {
     return (
-      <Navbar id="navBar" collapseOnSelect>
+      <Navbar style={{ marginBottom: '0' }} collapseOnSelect>
 	    <Navbar.Header>
 	      <Navbar.Brand>
 	        <a href="/">Wu Yeuk Fei (Donald)</a>
@@ -26,7 +24,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
-
-
-

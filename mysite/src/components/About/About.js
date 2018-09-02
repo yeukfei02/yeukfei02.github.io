@@ -61,14 +61,14 @@ class About extends Component {
             <div>CSS (SASS)</div>
             <ProgressBar bsStyle="success" now={75} />
 
-            <div>MySQL</div>
-            <ProgressBar bsStyle="warning" now={60} />
-
             <div>Oracle</div>
             <ProgressBar bsStyle="warning" now={60} />
 
             <div>MongoDB</div>
             <ProgressBar bsStyle="warning" now={50} />
+
+            <div>Docker</div>
+            <ProgressBar bsStyle="danger" now={35} />
 
             <div>Unix Shell Scripting</div>
             <ProgressBar bsStyle="danger" now={30} />

@@ -55,9 +55,6 @@ class About extends Component {
             <div>Java (Android, Kotlin)</div>
             <ProgressBar bsStyle="success" now={85} />
 
-            <div>Python</div>
-            <ProgressBar bsStyle="success" now={30} />
-
             <div>CSS (SASS)</div>
             <ProgressBar bsStyle="success" now={75} />
 

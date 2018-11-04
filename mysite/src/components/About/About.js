@@ -20,8 +20,8 @@ class About extends Component {
     	<section style={{ padding: '2em', backgroundColor: '#bbddff' }}>
 		    <Jumbotron style={{ maxWidth: '40em', margin: '0 auto', padding: '2em', borderRadius: '0.5em'}}>
             <h4>About me</h4>
-            <div style={{ fontSize: '1.1em' }}>My name is Wu Yeuk Fei, Donald. I graduate from Nanyang Technological University for my master and City University of Hong Kong for my bachelor. My major is Information Systems.</div><br/>
-            <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. Developing application could be interesting and fun, at least I satisfy after I solve problem and create something that useful for others.</div><br/>
+            <div style={{ fontSize: '1.1em' }}>Hi, my name is Wu Yeuk Fei, Donald.</div><br/>
+            <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. I feel satisfy after I solve problem and create something useful.</div><br/>
             <div style={{ fontSize: '1.1em' }}>I write web, android.</div><br/>
             <div style={{ fontSize: '1.1em' }}>Email me and I will tell you more :)</div>
         </Jumbotron>
@@ -54,6 +54,9 @@ class About extends Component {
 
             <div>Java (Android, Kotlin)</div>
             <ProgressBar bsStyle="success" now={85} />
+
+            <div>Go</div>
+            <ProgressBar bsStyle="success" now={50} />
 
             <div>CSS (SASS)</div>
             <ProgressBar bsStyle="success" now={75} />

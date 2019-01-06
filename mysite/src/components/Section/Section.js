@@ -32,53 +32,53 @@ class Section extends Component {
   }
 
   clickFacebook = () => {
-  	window.open('https://www.facebook.com/yeukfei02');
+    window.open('https://www.facebook.com/yeukfei02');
   }
 
   clickLinkedin = () => {
-  	window.open('https://hk.linkedin.com/in/donald-wu-83257370');
+    window.open('https://hk.linkedin.com/in/donald-wu-83257370');
   }
 
   clickGooglePlus = () => {
-  	window.open('https://plus.google.com/108258102920680009798/about');
+    window.open('https://plus.google.com/108258102920680009798/about');
   }
 
   clickTwitter = () => {
-  	window.open('https://twitter.com/yeukfei02');
+    window.open('https://twitter.com/yeukfei02');
   }
 
   clickGithub = () => {
-  	window.open('https://github.com/yeukfei02');
+    window.open('https://github.com/yeukfei02');
   }
 
   render() {
     return (
-    	<section style={{ margin: '0', padding: '2em', backgroundColor: '#d8f3fc' }}>
-    		<Image
-        id="image"
-        style={{ width: '12em', height: '12em', margin: '0 auto' }}
-        src="https://lh4.googleusercontent.com/-NfdeLMWx1fs/U8DWKAQH3RI/AAAAAAAAAfs/Hfu2SlsS6dQ/s1230-no/profile.jpg"
-        circle
-        responsive
-        onClick={(e) => this.handleClickImage(e)}
-        onMouseEnter={(e) => this.handleMouseEnterImage(e)}
+      <section style={{ margin: '0', padding: '2em', backgroundColor: '#d8f3fc' }}>
+        <Image
+          id="image"
+          style={{ width: '12em', height: '12em', margin: '0 auto' }}
+          src="https://lh4.googleusercontent.com/-NfdeLMWx1fs/U8DWKAQH3RI/AAAAAAAAAfs/Hfu2SlsS6dQ/s1230-no/profile.jpg"
+          circle
+          responsive
+          onClick={(e) => this.handleClickImage(e)}
+          onMouseEnter={(e) => this.handleMouseEnterImage(e)}
         />
-    		<h2 style={{ textAlign: 'center' }}>Wu Yeuk Fei (Donald)</h2>
-    		<h3 style={{ textAlign: 'center' }}>Developer</h3>
-    		<h4 style={{ textAlign: 'center' }}>Skype id: yeukfei02</h4>
+        <h2 style={{ textAlign: 'center' }}>Wu Yeuk Fei (Donald)</h2>
+        <h3 style={{ textAlign: 'center' }}>Developer</h3>
+        <h4 style={{ textAlign: 'center' }}>Skype id: yeukfei02</h4>
         <h4 style={{ textAlign: 'center' }}>Angellist: angel.co/yeukfei02</h4>
-    		<div style={{ width: '25em', margin: '0 auto' }}>
-    			  <span
+        <div style={{ width: '25em', margin: '0 auto' }}>
+          <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
             onClick={this.clickFacebook}
             onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
-          	<i className="fa fa-circle fa-stack-2x"></i>
-          	<i className="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          	</span>
+            <i className="fa fa-circle fa-stack-2x"></i>
+            <i className="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
 
-		        <span
+          <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
             onClick={this.clickLinkedin}
@@ -86,9 +86,9 @@ class Section extends Component {
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
             <i className="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-		        </span>
+          </span>
 
-		        <span
+          <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
             onClick={this.clickGooglePlus}
@@ -96,9 +96,9 @@ class Section extends Component {
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
             <i className="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-		        </span>
+          </span>
 
-		        <span
+          <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
             onClick={this.clickTwitter}
@@ -106,9 +106,9 @@ class Section extends Component {
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
             <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
-		        </span>
+          </span>
 
-		        <span
+          <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
             onClick={this.clickGithub}
@@ -116,17 +116,17 @@ class Section extends Component {
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
             <i className="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-		        </span>
+          </span>
 
-		        <a
+          <a
             style={{ marginLeft: '1em' }}
             className="btn btn-success"
             href="mailto:yeukfei02@gmail.com">
             <i className="fa fa-envelope-o"></i>
             &nbsp;&nbsp;Email me
             </a>
-    		</div>
-    	</section>
+        </div>
+      </section>
     );
   }
 }

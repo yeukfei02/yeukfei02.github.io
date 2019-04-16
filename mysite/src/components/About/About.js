@@ -56,7 +56,7 @@ class About extends Component {
           <ProgressBar bsStyle="success" now={85} />
 
           <div>Go</div>
-          <ProgressBar bsStyle="success" now={50} />
+          <ProgressBar bsStyle="success" now={60} />
 
           <div>CSS (SASS)</div>
           <ProgressBar bsStyle="success" now={75} />
@@ -68,7 +68,7 @@ class About extends Component {
           <ProgressBar bsStyle="warning" now={50} />
 
           <div>Docker</div>
-          <ProgressBar bsStyle="danger" now={35} />
+          <ProgressBar bsStyle="danger" now={40} />
 
           <div>Unix Shell Scripting</div>
           <ProgressBar bsStyle="danger" now={30} />

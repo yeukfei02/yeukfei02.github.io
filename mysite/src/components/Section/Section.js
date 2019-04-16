@@ -39,10 +39,6 @@ class Section extends Component {
     window.open('https://hk.linkedin.com/in/donald-wu-83257370');
   }
 
-  clickGooglePlus = () => {
-    window.open('https://plus.google.com/108258102920680009798/about');
-  }
-
   clickTwitter = () => {
     window.open('https://twitter.com/yeukfei02');
   }
@@ -64,7 +60,7 @@ class Section extends Component {
           onMouseEnter={(e) => this.handleMouseEnterImage(e)}
         />
         <h2 style={{ textAlign: 'center' }}>Wu Yeuk Fei (Donald)</h2>
-        <h3 style={{ textAlign: 'center' }}>Developer</h3>
+        <h3 style={{ textAlign: 'center' }}>Software Developer</h3>
         <h4 style={{ textAlign: 'center' }}>Skype id: yeukfei02</h4>
         <h4 style={{ textAlign: 'center' }}>Angellist: angel.co/yeukfei02</h4>
         <div style={{ width: '25em', margin: '0 auto' }}>
@@ -86,16 +82,6 @@ class Section extends Component {
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
             <i className="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-          </span>
-
-          <span
-            style={{ marginLeft: '0.2em', opacity: '0.3' }}
-            className="fa-stack fa-lg"
-            onClick={this.clickGooglePlus}
-            onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
-            onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
-            <i className="fa fa-circle fa-stack-2x"></i>
-            <i className="fa fa-google-plus fa-stack-1x fa-inverse"></i>
           </span>
 
           <span

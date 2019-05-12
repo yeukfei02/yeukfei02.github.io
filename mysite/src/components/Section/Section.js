@@ -36,7 +36,7 @@ class Section extends Component {
   }
 
   clickLinkedin = () => {
-    window.open('https://hk.linkedin.com/in/donald-wu-83257370');
+    window.open('https://www.linkedin.com/in/donaldwu02');
   }
 
   clickTwitter = () => {

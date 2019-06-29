@@ -21,7 +21,7 @@ class About extends Component {
         <Jumbotron style={{ maxWidth: '40em', margin: '0 auto', padding: '2em', borderRadius: '0.5em' }}>
           <h4>About me</h4>
           <div style={{ fontSize: '1.1em' }}>Hi, my name is Wu Yeuk Fei, Donald.</div><br />
-          <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. I feel satisfy after I solve problem and create something useful.</div><br />
+          <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. I feel satisfied after I solve the problem and create something useful.</div><br />
           <div style={{ fontSize: '1.1em' }}>I write web, android.</div><br />
           <div style={{ fontSize: '1.1em' }}>Email me and I will tell you more :)</div>
         </Jumbotron>

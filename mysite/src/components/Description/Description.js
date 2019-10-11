@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import { Jumbotron, ProgressBar } from 'react-bootstrap';
 
-class About extends Component {
-  handleOpenLink = () => {
-    window.open('https://yeukfei02.github.io');
+class Description extends Component {
+  constructor() {
+    super();
+    this.state = {
+
+    };
   }
 
-  handleMouseEnterLink = (e) => {
-    e.target.style.opacity = '0.7';
-    e.target.style.cursor = 'pointer';
-  }
+  componentDidMount() {
 
-  handleMouseLeaveLink = (e) => {
-    e.target.style.opacity = '0.3';
   }
 
   render() {
@@ -22,15 +20,14 @@ class About extends Component {
           <h4>About me</h4>
           <div style={{ fontSize: '1.1em' }}>Hi, my name is Wu Yeuk Fei, Donald.</div><br />
           <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. I feel satisfied after I solve the problem and create something useful.</div><br />
-          <div style={{ fontSize: '1.1em' }}>I write web, android.</div><br />
-          <div style={{ fontSize: '1.1em' }}>Email me and I will tell you more :)</div>
+          <div style={{ fontSize: '1.1em' }}>I can do web frontend, backend API and android.</div><br />
+          <div style={{ fontSize: '1.1em' }}>Email or connect me, I will tell you more.</div>
         </Jumbotron>
 
         <Jumbotron style={{ maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em' }}>
           <i className="fa fa-map-marker fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;Hong Kong<br /><br />
           <i className="fa fa-home fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;Hong Kong<br /><br />
           <i className="fa fa-envelope-o fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;yeukfei02@gmail.com<br /><br />
-          <i className="fa fa-link fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;<span style={{ opacity: '0.3' }} onClick={this.handleOpenLink} onMouseEnter={(e) => this.handleMouseEnterLink(e)} onMouseLeave={(e) => this.handleMouseLeaveLink(e)}>yeukfei02.github.io</span>
         </Jumbotron>
 
         <Jumbotron style={{ maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em' }}>
@@ -78,4 +75,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Description;

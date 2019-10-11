@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"4DAEA,KACC,6BAAkC","file":"static/css/main.4986d4eb.css","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Ubuntu');\n\nbody {\n\tfont-family: 'Ubuntu', sans-serif;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}

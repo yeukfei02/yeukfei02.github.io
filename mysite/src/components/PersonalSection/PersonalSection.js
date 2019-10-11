@@ -1,49 +1,42 @@
 import React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 
-import '../../../node_modules/animate.css/animate.min.css';
+import profilePic from '../../images/profile.png';
 
-class Section extends Component {
+class PersonalSection extends Component {
+  constructor() {
+    super();
+    this.state = {
+
+    };
+  }
+
   componentDidMount() {
-    window.addEventListener('load', this.handleImageAnimate);
+
   }
 
-  handleImageAnimate = () => {
-    const image = document.querySelector('#image');
-    image.className += ' animated bounceInUp';
-  }
-
-  handleMouseEnterImage = (e) => {
-    e.target.style.cursor = 'pointer';
-  }
-
-  handleClickImage = (e) => {
-    e.target.className -= ' animated bounceInUp';
-    e.target.className += ' img-responsive img-circle animated zoomIn';
-  }
-
-  handleMouseEnterSpan = (e) => {
+  handleMouseEnterSpan(e) {
     e.target.parentElement.style.opacity = '0.7';
     e.target.parentElement.style.cursor = 'pointer';
   }
 
-  handleMouseLeaveSpan = (e) => {
+  handleMouseLeaveSpan(e) {
     e.target.parentElement.style.opacity = '0.3';
   }
 
-  clickFacebook = () => {
+  handleFacebookClick() {
     window.open('https://www.facebook.com/yeukfei02');
   }
 
-  clickLinkedin = () => {
+  handleLinkedinClick() {
     window.open('https://www.linkedin.com/in/donaldwu02');
   }
 
-  clickTwitter = () => {
+  handleTwitterClick() {
     window.open('https://twitter.com/yeukfei02');
   }
 
-  clickGithub = () => {
+  handleGithubClick() {
     window.open('https://github.com/yeukfei02');
   }
 
@@ -51,23 +44,20 @@ class Section extends Component {
     return (
       <section style={{ margin: '0', padding: '2em', backgroundColor: '#d8f3fc' }}>
         <Image
-          id="image"
-          style={{ width: '12em', height: '12em', margin: '0 auto' }}
-          src="https://lh4.googleusercontent.com/-NfdeLMWx1fs/U8DWKAQH3RI/AAAAAAAAAfs/Hfu2SlsS6dQ/s1230-no/profile.jpg"
-          circle
+          style={{ width: '10em', height: '10em', margin: '0 auto' }}
+          src={profilePic}
+          round
           responsive
-          onClick={(e) => this.handleClickImage(e)}
-          onMouseEnter={(e) => this.handleMouseEnterImage(e)}
         />
         <h2 style={{ textAlign: 'center' }}>Wu Yeuk Fei (Donald)</h2>
         <h3 style={{ textAlign: 'center' }}>Software Developer</h3>
         <h4 style={{ textAlign: 'center' }}>Skype id: yeukfei02</h4>
-        <h4 style={{ textAlign: 'center' }}>Angellist: angel.co/yeukfei02</h4>
+        <h4 style={{ textAlign: 'center' }}>AngelList: angel.co/yeukfei02</h4>
         <div style={{ width: '25em', margin: '0 auto' }}>
           <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
-            onClick={this.clickFacebook}
+            onClick={() => this.handleFacebookClick()}
             onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
@@ -77,7 +67,7 @@ class Section extends Component {
           <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
-            onClick={this.clickLinkedin}
+            onClick={() => this.handleLinkedinClick()}
             onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
@@ -87,7 +77,7 @@ class Section extends Component {
           <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
-            onClick={this.clickTwitter}
+            onClick={() => this.handleTwitterClick()}
             onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
@@ -97,7 +87,7 @@ class Section extends Component {
           <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
             className="fa-stack fa-lg"
-            onClick={this.clickGithub}
+            onClick={() => this.handleGithubClick()}
             onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
             onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
             <i className="fa fa-circle fa-stack-2x"></i>
@@ -117,4 +107,4 @@ class Section extends Component {
   }
 }
 
-export default Section;
+export default PersonalSection;

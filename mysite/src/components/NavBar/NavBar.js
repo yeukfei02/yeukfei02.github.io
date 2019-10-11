@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
 
 class NavBar extends Component {
+  constructor() {
+    super();
+    this.state = {
+
+    };
+  }
+
+  componentDidMount() {
+
+  }
+
   render() {
     return (
       <Navbar style={{ marginBottom: '0' }} collapseOnSelect>

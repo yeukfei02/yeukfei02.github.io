@@ -18,10 +18,12 @@ class Description extends Component {
       <section style={{ padding: '2em', backgroundColor: '#bbddff' }}>
         <Jumbotron style={{ maxWidth: '40em', margin: '0 auto', padding: '2em', borderRadius: '0.5em' }}>
           <h4>About me</h4>
-          <div style={{ fontSize: '1.1em' }}>Hi, my name is Wu Yeuk Fei, Donald.</div><br />
-          <div style={{ fontSize: '1.1em' }}>I find I like programming when I studied in my final year. I feel satisfied after I solve the problem and create something useful.</div><br />
-          <div style={{ fontSize: '1.1em' }}>I can do web frontend, backend API and android.</div><br />
-          <div style={{ fontSize: '1.1em' }}>Email or connect me, I will tell you more.</div>
+          <div style={{ fontSize: '1.1em' }}>
+            <div>Hi, my name is Wu Yeuk Fei, Donald. I am a software developer.</div><br />
+            <div>I find I like programming when I studied in my final year. I feel satisfied after I solve the problem and create something useful.</div><br />
+            <div>I can do web frontend, backend API and android.</div><br />
+            <div>Email or connect me, I will tell you more.</div>
+          </div>
         </Jumbotron>
 
         <Jumbotron style={{ maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em' }}>
@@ -54,9 +56,6 @@ class Description extends Component {
 
           <div>Go</div>
           <ProgressBar bsStyle="success" now={60} />
-
-          <div>CSS (SASS)</div>
-          <ProgressBar bsStyle="success" now={75} />
 
           <div>Postgres</div>
           <ProgressBar bsStyle="warning" now={60} />

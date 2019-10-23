@@ -44,15 +44,17 @@ class PersonalSection extends Component {
     return (
       <section style={{ margin: '0', padding: '2em', backgroundColor: '#d8f3fc' }}>
         <Image
-          style={{ width: '10em', height: '10em', margin: '0 auto' }}
+          style={{ width: '12em', height: '12em', margin: '0 auto' }}
           src={profilePic}
-          round
+          circle
           responsive
         />
-        <h2 style={{ textAlign: 'center' }}>Wu Yeuk Fei (Donald)</h2>
-        <h3 style={{ textAlign: 'center' }}>Software Developer</h3>
-        <h4 style={{ textAlign: 'center' }}>Skype id: yeukfei02</h4>
-        <h4 style={{ textAlign: 'center' }}>AngelList: angel.co/yeukfei02</h4>
+        <div style={{ textAlign: 'center' }}>
+          <h2>Wu Yeuk Fei (Donald)</h2>
+          <h3>Software Developer</h3>
+          <h4>Skype id: yeukfei02</h4>
+          <h4>AngelList: angel.co/yeukfei02</h4>
+        </div>
         <div style={{ width: '25em', margin: '0 auto' }}>
           <span
             style={{ marginLeft: '0.2em', opacity: '0.3' }}
@@ -100,7 +102,7 @@ class PersonalSection extends Component {
             href="mailto:yeukfei02@gmail.com">
             <i className="fa fa-envelope-o"></i>
             &nbsp;&nbsp;Email me
-            </a>
+          </a>
         </div>
       </section>
     );

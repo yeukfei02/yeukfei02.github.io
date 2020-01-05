@@ -3,6 +3,7 @@ My personal website
 
 ### Requirement:
  - install yarn
+ - install node
 
 ### Testing and run:
 ```

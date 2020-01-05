@@ -1,37 +1,37 @@
-import React, { Component } from 'react';
-import { Navbar } from 'react-bootstrap';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
-class NavBar extends Component {
-  constructor() {
-    super();
-    this.state = {
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+}));
 
-    };
-  }
+function NavBar() {
+  const classes = useStyles();
 
-  componentDidMount() {
-
-  }
-
-  render() {
-    return (
-      <Navbar style={{ marginBottom: '0' }} collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="/">Wu Yeuk Fei (Donald)</a>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          {/*<Nav pullRight>
-	        <NavItem eventKey={1} href="/">Home</NavItem>
-	        <NavItem eventKey={2} href="/about">About</NavItem>
-	        <NavItem eventKey={3} href="/contact">Contact</NavItem>
-	      </Nav>*/}
-        </Navbar.Collapse>
-      </Navbar>
-    );
-  }
+  return (
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" color="inherit">
+            Wu Yeuk Fei (Donald)
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 }
 
 export default NavBar;

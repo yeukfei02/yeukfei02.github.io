@@ -1,112 +1,60 @@
-import React, { Component } from 'react';
-import { Image } from 'react-bootstrap';
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import Tooltip from '@material-ui/core/Tooltip';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
 
 import profilePic from '../../images/profile.png';
 
-class PersonalSection extends Component {
-  constructor() {
-    super();
-    this.state = {
-
-    };
-  }
-
-  componentDidMount() {
-
-  }
-
-  handleMouseEnterSpan(e) {
-    e.target.parentElement.style.opacity = '0.7';
-    e.target.parentElement.style.cursor = 'pointer';
-  }
-
-  handleMouseLeaveSpan(e) {
-    e.target.parentElement.style.opacity = '0.3';
-  }
-
-  handleFacebookClick() {
+function PersonalSection() {
+  const handleFacebookClick = () => {
     window.open('https://www.facebook.com/yeukfei02');
   }
 
-  handleLinkedinClick() {
-    window.open('https://www.linkedin.com/in/donaldwu02');
-  }
-
-  handleTwitterClick() {
+  const handleTwitterClick = () => {
     window.open('https://twitter.com/yeukfei02');
   }
 
-  handleGithubClick() {
+  const handleGithubClick = () => {
     window.open('https://github.com/yeukfei02');
   }
 
-  render() {
-    return (
-      <section style={{ margin: '0', padding: '2em', backgroundColor: '#d8f3fc' }}>
-        <Image
-          style={{ width: '12em', height: '12em', margin: '0 auto' }}
-          src={profilePic}
-          circle
-          responsive
-        />
-        <div style={{ textAlign: 'center' }}>
-          <h2>Wu Yeuk Fei (Donald)</h2>
-          <h3>Software Developer</h3>
-          <h4>Skype id: yeukfei02</h4>
-          <h4>AngelList: angel.co/yeukfei02</h4>
-        </div>
-        <div style={{ width: '25em', margin: '0 auto' }}>
-          <span
-            style={{ marginLeft: '0.2em', opacity: '0.3' }}
-            className="fa-stack fa-lg"
-            onClick={() => this.handleFacebookClick()}
-            onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
-            onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
-            <i className="fa fa-circle fa-stack-2x"></i>
-            <i className="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-
-          <span
-            style={{ marginLeft: '0.2em', opacity: '0.3' }}
-            className="fa-stack fa-lg"
-            onClick={() => this.handleLinkedinClick()}
-            onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
-            onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
-            <i className="fa fa-circle fa-stack-2x"></i>
-            <i className="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-          </span>
-
-          <span
-            style={{ marginLeft: '0.2em', opacity: '0.3' }}
-            className="fa-stack fa-lg"
-            onClick={() => this.handleTwitterClick()}
-            onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
-            onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
-            <i className="fa fa-circle fa-stack-2x"></i>
-            <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-
-          <span
-            style={{ marginLeft: '0.2em', opacity: '0.3' }}
-            className="fa-stack fa-lg"
-            onClick={() => this.handleGithubClick()}
-            onMouseEnter={(e) => this.handleMouseEnterSpan(e)}
-            onMouseLeave={(e) => this.handleMouseLeaveSpan(e)}>
-            <i className="fa fa-circle fa-stack-2x"></i>
-            <i className="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-          </span>
-
-          <a
-            style={{ marginLeft: '1em' }}
-            className="btn btn-success"
-            href="mailto:yeukfei02@gmail.com">
-            <i className="fa fa-envelope-o"></i>
-            &nbsp;&nbsp;Email me
-          </a>
-        </div>
-      </section>
-    );
+  const handleEmailClick = () => {
+    window.open('mailto:yeukfei02@gmail.com');
   }
+
+  return (
+    <div className="text-center">
+      <img src={profilePic} className="my-4 rounded-circle mx-auto d-block" alt="" width="200" height="200" />
+      <Typography variant="h4" gutterBottom>
+        Wu Yeuk Fei (Donald)
+      </Typography>
+      <Typography variant="h5" gutterBottom>
+        Software Developer
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        Skype id: yeukfei02
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        AngelList: angel.co/yeukfei02
+      </Typography>
+
+      <Tooltip title="yeukfei02" placement="bottom">
+        <FacebookIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleFacebookClick} />
+      </Tooltip>
+      <Tooltip title="yeukfei02" placement="bottom">
+        <TwitterIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleTwitterClick} />
+      </Tooltip>
+      <Tooltip title="yeukfei02" placement="bottom">
+        <GitHubIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleGithubClick} />
+      </Tooltip>
+      <Tooltip title="yeukfei02@gmail.com" placement="bottom">
+        <EmailIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleEmailClick} />
+      </Tooltip>
+    </div>
+  );
 }
 
 export default PersonalSection;

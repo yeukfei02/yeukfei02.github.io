@@ -1,77 +1,218 @@
-import React, { Component } from 'react';
-import { Jumbotron, ProgressBar } from 'react-bootstrap';
+import React from 'react';
+import { lighten, makeStyles, withStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import HomeIcon from '@material-ui/icons/Home';
+import EmailIcon from '@material-ui/icons/Email';
+import SchoolIcon from '@material-ui/icons/School';
+import StarIcon from '@material-ui/icons/Star';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+import yellow from '@material-ui/core/colors/yellow';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
-class Description extends Component {
-  constructor() {
-    super();
-    this.state = {
+const useStyles = makeStyles(theme => ({
+  root: {
+    padding: theme.spacing(3, 2),
+  },
+}));
 
-    };
-  }
+const BorderLinearProgress = withStyles({
+  root: {
+    height: 20,
+    backgroundColor: lighten('#ff6c5c', 0.5),
+  },
+  bar: {
+    borderRadius: 20,
+    backgroundColor: '#ff6c5c',
+  },
+})(LinearProgress);
 
-  componentDidMount() {
+const BorderLinearProgress2 = withStyles({
+  root: {
+    height: 20,
+    backgroundColor: lighten('#8bc34a', 0.5),
+  },
+  bar: {
+    borderRadius: 20,
+    backgroundColor: '#8bc34a',
+  },
+})(LinearProgress);
 
-  }
+const BorderLinearProgress3 = withStyles({
+  root: {
+    height: 20,
+    backgroundColor: lighten('#2196f3', 0.5),
+  },
+  bar: {
+    borderRadius: 20,
+    backgroundColor: '#2196f3',
+  },
+})(LinearProgress);
 
-  render() {
-    return (
-      <section style={{ padding: '2em', backgroundColor: '#bbddff' }}>
-        <Jumbotron style={{ maxWidth: '40em', margin: '0 auto', padding: '2em', borderRadius: '0.5em' }}>
-          <h4>About me</h4>
-          <div style={{ fontSize: '1.1em' }}>
-            <div>Hi, my name is Wu Yeuk Fei, Donald. I am a software developer.</div><br />
-            <div>I find I like programming when I studied in my final year. I feel satisfied after I solve the problem and create something useful.</div><br />
-            <div>I can do web frontend, backend API and android.</div><br />
-            <div>Email or connect me, I will tell you more.</div>
+function Description() {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <div className="my-4 d-flex justify-content-center">
+        <Paper className={`${classes.root} mx-4 w-75`}>
+          <div>
+            <Typography variant="h6" gutterBottom>
+              About me
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Hi, my name is Wu Yeuk Fei, Donald. I am a software developer.
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              I find I like programming when I studied in my final year. I feel satisfied after I solve the problem and create something useful.
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              I can do web frontend, backend API and android.
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Email or contact me, I will tell you more.
+            </Typography>
           </div>
-        </Jumbotron>
-
-        <Jumbotron style={{ maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em' }}>
-          <i className="fa fa-map-marker fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;Hong Kong<br /><br />
-          <i className="fa fa-home fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;Hong Kong<br /><br />
-          <i className="fa fa-envelope-o fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;yeukfei02@gmail.com<br /><br />
-        </Jumbotron>
-
-        <Jumbotron style={{ maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em' }}>
-          <h4>Education</h4>
-          <i className="fa fa-graduation-cap fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;<b style={{ fontSize: '1.2em' }}>Nanyang Technological University</b><div>MSc (Information Systems)</div><br />
-          <i className="fa fa-graduation-cap fa-lg" style={{ opacity: '0.5' }}></i>&nbsp;&nbsp;<b style={{ fontSize: '1.2em' }}>City University of Hong Kong</b><div>BBA (Information Management)</div>
-        </Jumbotron>
-
-        <Jumbotron style={{ maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em' }}>
-          <h4>Languages</h4>
-          <div style={{ margin: '0.5em auto' }}>English&nbsp;&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star-o fa-lg"></i>&nbsp;<i className="fa fa-star-o fa-lg"></i></div>
-          <div style={{ margin: '0.5em auto' }}>Cantonese&nbsp;&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i></div>
-          <div>Mandarin&nbsp;&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star fa-lg" style={{ color: '#CCCC00' }}></i>&nbsp;<i className="fa fa-star-o fa-lg"></i></div>
-        </Jumbotron>
-
-        <Jumbotron style={{ maxWidth: '40em', margin: '3em auto', padding: '2em', borderRadius: '0.5em' }}>
-          <h4>Computer skills</h4>
-
-          <div>JavaScript (React.js, Node.js)</div>
-          <ProgressBar bsStyle="success" now={90} />
-
-          <div>Java (Android, Kotlin)</div>
-          <ProgressBar bsStyle="success" now={85} />
-
-          <div>Go</div>
-          <ProgressBar bsStyle="success" now={60} />
-
-          <div>Postgres</div>
-          <ProgressBar bsStyle="warning" now={60} />
-
-          <div>MongoDB</div>
-          <ProgressBar bsStyle="warning" now={50} />
-
-          <div>Docker</div>
-          <ProgressBar bsStyle="danger" now={40} />
-
-          <div>Unix Shell Scripting</div>
-          <ProgressBar bsStyle="danger" now={30} />
-        </Jumbotron>
-      </section>
-    );
-  }
+        </Paper>
+      </div>
+      <div className="my-4 d-flex justify-content-center">
+        <Paper className={`${classes.root} mx-4 w-75`}>
+          <div>
+            <LocationOnIcon /> Hong Kong
+            <br />
+            <br />
+            <HomeIcon /> Hong Kong
+            <br />
+            <br />
+            <EmailIcon /> yeukfei02@gmail.com
+          </div>
+        </Paper>
+      </div>
+      <div className="my-4 d-flex justify-content-center">
+        <Paper className={`${classes.root} mx-4 w-75`}>
+          <div>
+            <Typography variant="h6" gutterBottom>
+              Education
+            </Typography>
+            <SchoolIcon /> Nanyang Technological University - MSc (Information Systems)
+            <br />
+            <br />
+            <SchoolIcon /> City University of Hong Kong - BBA (Information Management)
+          </div>
+        </Paper>
+      </div>
+      <div className="my-4 d-flex justify-content-center">
+        <Paper className={`${classes.root} mx-4 w-75`}>
+          <div>
+            <Typography variant="h6" gutterBottom>
+              Language
+            </Typography>
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarBorderIcon />
+            <StarBorderIcon />
+            English
+            <br />
+            <br />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            Cantonese
+            <br />
+            <br />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarIcon style={{ color: yellow[700] }} />
+            <StarBorderIcon />
+            Mandarin
+          </div>
+        </Paper>
+      </div>
+      <div className="my-4 d-flex justify-content-center">
+        <Paper className={`${classes.root} mx-4 w-75`}>
+          <div>
+            <Typography variant="h6" gutterBottom>
+              Programming skills
+            </Typography>
+            <Typography variant="body2" gutterBottom>
+              JavaScript (React.js, Node.js)
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={90}
+            />
+            <br />
+            <Typography variant="body2" gutterBottom>
+              Java (Android, Kotlin)
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={85}
+            />
+            <br />
+            <Typography variant="body2" gutterBottom>
+              Go
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={60}
+            />
+            <br />
+            <Typography variant="body2" gutterBottom>
+              Postgres
+            </Typography>
+            <BorderLinearProgress2
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={60}
+            />
+            <br />
+            <Typography variant="body2" gutterBottom>
+              MongoDB
+            </Typography>
+            <BorderLinearProgress2
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={55}
+            />
+            <br />
+            <Typography variant="body2" gutterBottom>
+              Docker
+            </Typography>
+            <BorderLinearProgress3
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={40}
+            />
+            <br />
+            <Typography variant="body2" gutterBottom>
+              Unix Shell Scripting
+            </Typography>
+            <BorderLinearProgress3
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={30}
+            />
+          </div>
+        </Paper>
+      </div>
+    </div>
+  );
 }
 
 export default Description;

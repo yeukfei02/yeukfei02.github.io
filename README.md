@@ -9,13 +9,14 @@ My personal website
 ```
 $ cd mysite
 $ yarn
+
+// development
 $ yarn start
-```
 
-start the web in http://localhost:3000
+open localhost:3000
 
-```
+// production
 $ yarn build
-```
 
-create ```build``` folder for production
+create build folder for production
+```

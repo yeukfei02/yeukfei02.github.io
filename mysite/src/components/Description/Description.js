@@ -79,13 +79,15 @@ function Description() {
       <div className="my-4 d-flex justify-content-center">
         <Paper className={`${classes.root} mx-4 w-75`}>
           <div>
-            <LocationOnIcon /> Hong Kong
-            <br />
-            <br />
-            <HomeIcon /> Hong Kong
-            <br />
-            <br />
-            <EmailIcon /> yeukfei02@gmail.com
+            <Typography variant="body2" gutterBottom>
+              <LocationOnIcon /> Hong Kong
+            </Typography>
+            <Typography variant="body2" gutterBottom>
+              <HomeIcon /> Hong Kong
+              </Typography>
+            <Typography variant="body2" gutterBottom>
+              <EmailIcon /> yeukfei02@gmail.com
+            </Typography>
           </div>
         </Paper>
       </div>
@@ -95,10 +97,12 @@ function Description() {
             <Typography variant="h6" gutterBottom>
               Education
             </Typography>
-            <SchoolIcon /> Nanyang Technological University - MSc (Information Systems)
-            <br />
-            <br />
-            <SchoolIcon /> City University of Hong Kong - BBA (Information Management)
+            <Typography variant="body2" gutterBottom>
+              <SchoolIcon /> Nanyang Technological University - MSc (Information Systems)
+            </Typography>
+            <Typography variant="body2" gutterBottom>
+              <SchoolIcon /> City University of Hong Kong - BBA (Information Management)
+            </Typography>
           </div>
         </Paper>
       </div>
@@ -108,28 +112,33 @@ function Description() {
             <Typography variant="h6" gutterBottom>
               Language
             </Typography>
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarBorderIcon />
-            <StarBorderIcon />
-            English
-            <br />
-            <br />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            Cantonese
-            <br />
-            <br />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarIcon style={{ color: yellow[700] }} />
-            <StarBorderIcon />
-            Mandarin
+
+            <Typography variant="body2" gutterBottom>
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarBorderIcon />
+              <StarBorderIcon className="mr-1" />
+              English
+            </Typography>
+
+            <Typography variant="body2" gutterBottom>
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} className="mr-1" />
+              Cantonese
+            </Typography>
+
+            <Typography variant="body2" gutterBottom>
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarBorderIcon className="mr-1" />
+              Mandarin
+            </Typography>
           </div>
         </Paper>
       </div>
@@ -140,7 +149,7 @@ function Description() {
               Programming skills
             </Typography>
             <Typography variant="body2" gutterBottom>
-              JavaScript (React.js, Node.js)
+              JavaScript (React.js, React Native, Node.js)
             </Typography>
             <BorderLinearProgress
               className={classes.margin}

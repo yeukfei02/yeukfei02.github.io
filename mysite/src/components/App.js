@@ -26,7 +26,7 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    "fontFamily": "Lato, sans-serif",
+    "fontFamily": "'Hind', sans-serif",
   }
 },
 )

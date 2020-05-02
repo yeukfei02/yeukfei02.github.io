@@ -38,6 +38,7 @@ function App() {
         <CssBaseline />
         <Favicon url={favicon} />
         <Normalize />
+
         <NavBar />
         <PersonalSection />
         <Description />

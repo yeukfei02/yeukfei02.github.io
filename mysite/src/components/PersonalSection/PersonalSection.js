@@ -5,6 +5,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
+import { indigo, blue, pink, red } from '@material-ui/core/colors';
 
 import profilePic from '../../images/profile.png';
 
@@ -42,16 +43,16 @@ function PersonalSection() {
       </Typography>
 
       <Tooltip title="yeukfei02" placement="bottom">
-        <FacebookIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleFacebookClick} />
+        <FacebookIcon style={{ cursor: 'pointer', color: indigo[500] }} className="mr-3" fontSize="large" onClick={handleFacebookClick} />
       </Tooltip>
       <Tooltip title="yeukfei02" placement="bottom">
-        <TwitterIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleTwitterClick} />
+        <TwitterIcon style={{ cursor: 'pointer', color: blue[500] }} className="mr-3" fontSize="large" onClick={handleTwitterClick} />
       </Tooltip>
       <Tooltip title="yeukfei02" placement="bottom">
-        <GitHubIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleGithubClick} />
+        <GitHubIcon style={{ cursor: 'pointer', color: pink[500] }} className="mr-3" fontSize="large" onClick={handleGithubClick} />
       </Tooltip>
       <Tooltip title="yeukfei02@gmail.com" placement="bottom">
-        <EmailIcon style={{ cursor: 'pointer' }} className="mr-3" fontSize="large" onClick={handleEmailClick} />
+        <EmailIcon style={{ cursor: 'pointer', color: red[500] }} className="mr-3" fontSize="large" onClick={handleEmailClick} />
       </Tooltip>
     </div>
   );

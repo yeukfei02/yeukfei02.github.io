@@ -80,24 +80,20 @@ function Description() {
       <div className="my-4 d-flex justify-content-center">
         <Paper className={`${classes.root} mx-4 w-75`}>
           <div>
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <LocationOnIcon />
-                <div className="mx-2 d-flex align-items-center">Hong Kong</div>
-              </div>
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <HomeIcon />
-                <div className="mx-2 d-flex align-items-center">Hong Kong</div>
-              </div>
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <EmailIcon />
-                <div className="mx-2 d-flex align-items-center">yeukfei02@gmail.com</div>
-              </div>
-            </Typography>
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <LocationOnIcon />
+              <div className="mx-2 d-flex align-items-center">Hong Kong</div>
+            </div>
+
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <HomeIcon />
+              <div className="mx-2 d-flex align-items-center">Hong Kong</div>
+            </div>
+
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <EmailIcon />
+              <div className="mx-2 d-flex align-items-center">yeukfei02@gmail.com</div>
+            </div>
           </div>
         </Paper>
       </div>
@@ -107,18 +103,16 @@ function Description() {
             <Typography variant="h6" gutterBottom>
               Education
             </Typography>
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <SchoolIcon />
-                <div className="mx-2 d-flex align-items-center">Nanyang Technological University - MSc (Information Systems)</div>
-              </div>
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <SchoolIcon />
-                <div className="mx-2 d-flex align-items-center">City University of Hong Kong - BBA (Information Management)</div>
-              </div>
-            </Typography>
+
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <SchoolIcon />
+              <div className="mx-2 d-flex align-items-center">Nanyang Technological University - MSc (Information Systems)</div>
+            </div>
+
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <SchoolIcon />
+              <div className="mx-2 d-flex align-items-center">City University of Hong Kong - BBA (Information Management)</div>
+            </div>
           </div>
         </Paper>
       </div>
@@ -129,38 +123,32 @@ function Description() {
               Language
             </Typography>
 
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarBorderIcon />
-                <StarBorderIcon className="mr-1" />
-                <div className="d-flex align-items-center">English</div>
-              </div>
-            </Typography>
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarBorderIcon />
+              <StarBorderIcon className="mr-1" />
+              <div className="d-flex align-items-center">English</div>
+            </div>
 
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} className="mr-1" />
-                <div className="d-flex align-items-center">Cantonese</div>
-              </div>
-            </Typography>
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} className="mr-1" />
+              <div className="d-flex align-items-center">Cantonese</div>
+            </div>
 
-            <Typography variant="body2" gutterBottom>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarIcon style={{ color: yellow[700] }} />
-                <StarBorderIcon className="mr-1" />
-                <div className="d-flex align-items-center">Mandarin</div>
-              </div>
-            </Typography>
+            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarIcon style={{ color: yellow[700] }} />
+              <StarBorderIcon className="mr-1" />
+              <div className="d-flex align-items-center">Mandarin</div>
+            </div>
           </div>
         </Paper>
       </div>
@@ -170,6 +158,7 @@ function Description() {
             <Typography variant="h6" gutterBottom>
               Programming skills
             </Typography>
+
             <Typography variant="body2" gutterBottom>
               JavaScript (React.js, React Native, Node.js)
             </Typography>
@@ -180,6 +169,7 @@ function Description() {
               value={90}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               TypeScript
             </Typography>
@@ -190,6 +180,7 @@ function Description() {
               value={90}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               Java (Android, Kotlin)
             </Typography>
@@ -200,6 +191,7 @@ function Description() {
               value={85}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               Go
             </Typography>
@@ -210,6 +202,7 @@ function Description() {
               value={60}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               Python
             </Typography>
@@ -220,6 +213,7 @@ function Description() {
               value={50}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               Postgres
             </Typography>
@@ -230,6 +224,7 @@ function Description() {
               value={60}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               MongoDB
             </Typography>
@@ -240,6 +235,7 @@ function Description() {
               value={55}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               Docker
             </Typography>
@@ -250,6 +246,7 @@ function Description() {
               value={40}
             />
             <br />
+
             <Typography variant="body2" gutterBottom>
               Unix Shell Scripting
             </Typography>

@@ -182,6 +182,17 @@ function Description() {
             <br />
 
             <Typography variant="body2" gutterBottom>
+              Serverless (AWS Api Gateway, AWS Lambda, AWS Dynamodb, AWS X-Ray)
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={90}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
               Java (Android, Kotlin)
             </Typography>
             <BorderLinearProgress

@@ -182,7 +182,7 @@ function Description() {
             <br />
 
             <Typography variant="body2" gutterBottom>
-              Serverless (AWS Api Gateway, AWS Lambda, AWS Dynamodb, AWS X-Ray)
+              Serverless (AWS Api Gateway, AWS Lambda, AWS Dynamodb, AWS CloudWatch, AWS X-Ray)
             </Typography>
             <BorderLinearProgress
               className={classes.margin}

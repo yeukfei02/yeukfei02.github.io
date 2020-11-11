@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.2.0...v1.3.0) (2020-11-11)
+
+
+### Features
+
+* 🎸 add skills ([c755a2e](https://github.com/yeukfei02/yeukfei02.github.io/commit/c755a2e712ddf1a2f949f15b2e219bb7640f3f49))
+
 ### [1.2.1](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.2.0...v1.2.1) (2020-10-31)
 
 ## [1.2.0](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.1.3...v1.2.0) (2020-10-31)

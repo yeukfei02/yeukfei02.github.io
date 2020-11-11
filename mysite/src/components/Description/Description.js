@@ -193,13 +193,24 @@ function Description() {
             <br />
 
             <Typography variant="body2" gutterBottom>
+              Graphql (Apollo Server, Apollo Client)
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={75}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
               Java (Android, Kotlin)
             </Typography>
             <BorderLinearProgress
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={85}
+              value={75}
             />
             <br />
 

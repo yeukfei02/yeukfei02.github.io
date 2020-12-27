@@ -80,19 +80,30 @@ function Description() {
       <div className="my-4 d-flex justify-content-center">
         <Paper className={`${classes.root} mx-4 w-75`}>
           <div>
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <LocationOnIcon />
               <div className="mx-2 d-flex align-items-center">Hong Kong</div>
             </div>
 
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <HomeIcon />
               <div className="mx-2 d-flex align-items-center">Hong Kong</div>
             </div>
 
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <EmailIcon />
-              <div className="mx-2 d-flex align-items-center">yeukfei02@gmail.com</div>
+              <div className="mx-2 d-flex align-items-center">
+                yeukfei02@gmail.com
+              </div>
             </div>
           </div>
         </Paper>
@@ -104,14 +115,24 @@ function Description() {
               Education
             </Typography>
 
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <SchoolIcon />
-              <div className="mx-2 d-flex align-items-center">Nanyang Technological University - MSc (Information Systems)</div>
+              <div className="mx-2 d-flex align-items-center">
+                Nanyang Technological University - MSc (Information Systems)
+              </div>
             </div>
 
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <SchoolIcon />
-              <div className="mx-2 d-flex align-items-center">City University of Hong Kong - BBA (Information Management)</div>
+              <div className="mx-2 d-flex align-items-center">
+                City University of Hong Kong - BBA (Information Management)
+              </div>
             </div>
           </div>
         </Paper>
@@ -123,7 +144,10 @@ function Description() {
               Language
             </Typography>
 
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <StarIcon style={{ color: yellow[700] }} />
               <StarIcon style={{ color: yellow[700] }} />
               <StarIcon style={{ color: yellow[700] }} />
@@ -132,7 +156,10 @@ function Description() {
               <div className="d-flex align-items-center">English</div>
             </div>
 
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <StarIcon style={{ color: yellow[700] }} />
               <StarIcon style={{ color: yellow[700] }} />
               <StarIcon style={{ color: yellow[700] }} />
@@ -141,7 +168,10 @@ function Description() {
               <div className="d-flex align-items-center">Cantonese</div>
             </div>
 
-            <div className="my-2" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div
+              className="my-2"
+              style={{ display: "flex", flexDirection: "row" }}
+            >
               <StarIcon style={{ color: yellow[700] }} />
               <StarIcon style={{ color: yellow[700] }} />
               <StarIcon style={{ color: yellow[700] }} />
@@ -182,7 +212,8 @@ function Description() {
             <br />
 
             <Typography variant="body2" gutterBottom>
-              Serverless (AWS Api Gateway, AWS Lambda, AWS Dynamodb, AWS CloudWatch, AWS X-Ray)
+              Serverless (AWS Api Gateway, AWS Lambda, AWS Dynamodb, AWS
+              CloudWatch, AWS X-Ray)
             </Typography>
             <BorderLinearProgress
               className={classes.margin}

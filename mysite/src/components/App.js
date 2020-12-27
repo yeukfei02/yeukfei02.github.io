@@ -1,13 +1,13 @@
-import React from 'react';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import React from "react";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Favicon from 'react-favicon';
-import Normalize from 'react-normalize';
+import Favicon from "react-favicon";
+import Normalize from "react-normalize";
 
-import favicon from '../images/favicon.png';
-import NavBar from './navBar/NavBar';
-import PersonalSection from './personalSection/PersonalSection';
-import Description from './description/Description';
+import favicon from "../images/favicon.png";
+import NavBar from "./navBar/NavBar";
+import PersonalSection from "./personalSection/PersonalSection";
+import Description from "./description/Description";
 
 // use default theme
 // const theme = createMuiTheme();
@@ -16,20 +16,19 @@ import Description from './description/Description';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#3f51b5'
+      main: "#3f51b5",
     },
     secondary: {
-      main: '#b3e5fc'
+      main: "#b3e5fc",
     },
     background: {
-      default: "#e0f7fa"
+      default: "#e0f7fa",
     },
   },
   typography: {
-    "fontFamily": "'Hind', sans-serif",
-  }
-},
-)
+    fontFamily: "'Hind', sans-serif",
+  },
+});
 
 function App() {
   return (

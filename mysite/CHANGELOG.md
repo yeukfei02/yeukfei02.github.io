@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.3.0...v1.3.1) (2020-12-27)
+
+
+### Bug Fixes
+
+* 🐛 fix format and add link button ([dbdae3c](https://github.com/yeukfei02/yeukfei02.github.io/commit/dbdae3cd1fdf3527814a6ee9021de47aec103f95))
+
+### [1.2.1](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.2.0...v1.2.1) (2020-10-31)
+
 ## [1.3.0](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.2.0...v1.3.0) (2020-11-11)
 
 

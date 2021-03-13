@@ -190,18 +190,7 @@ function Description() {
             </Typography>
 
             <Typography variant="body2" gutterBottom>
-              JavaScript (React.js, React Native, Node.js)
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={90}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              TypeScript
+              JavaScript, TypeScript (React.js, React Native, Node.js)
             </Typography>
             <BorderLinearProgress
               className={classes.margin}
@@ -241,23 +230,23 @@ function Description() {
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={75}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Go
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={60}
+              value={70}
             />
             <br />
 
             <Typography variant="body2" gutterBottom>
               Python
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={65}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              Go
             </Typography>
             <BorderLinearProgress
               className={classes.margin}
@@ -274,7 +263,7 @@ function Description() {
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={60}
+              value={65}
             />
             <br />
 
@@ -285,7 +274,18 @@ function Description() {
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={55}
+              value={70}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              Dynamodb
+            </Typography>
+            <BorderLinearProgress2
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={70}
             />
             <br />
 

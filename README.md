@@ -1,12 +1,15 @@
 # yeukfei02.github.io
+
 My personal website
 
-### Requirement:
- - install yarn
- - install node
+## Requirement
 
-### Testing and run:
-```
+- install yarn
+- install node
+
+## Testing and run
+
+```zsh
 $ cd mysite
 $ yarn
 

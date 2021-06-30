@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.6](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.3.5...v1.3.6) (2021-06-30)
+
+
+### Bug Fixes
+
+* 🐛 update skills ([158909b](https://github.com/yeukfei02/yeukfei02.github.io/commit/158909b4bdcb7fd66251ae697045e53f5c93010a))
+* update skills ([76b3e5a](https://github.com/yeukfei02/yeukfei02.github.io/commit/76b3e5a60c7ea2494503532653c50fbfc1bb1edd))
+
 ### [1.3.5](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.3.4...v1.3.5) (2021-04-16)
 
 

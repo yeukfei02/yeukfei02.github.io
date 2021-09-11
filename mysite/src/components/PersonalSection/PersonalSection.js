@@ -24,7 +24,7 @@ function PersonalSection() {
   };
 
   const handleLinkClick = () => {
-    window.open("https://linktr.ee/yeukfei02");
+    window.open("https://bio.link/yeukfei02");
   };
 
   const handleEmailClick = () => {

@@ -224,18 +224,18 @@ function Description() {
             <br />
 
             <Typography variant="body2" gutterBottom>
-              Python
+              Ruby
             </Typography>
             <BorderLinearProgress
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={70}
+              value={75}
             />
             <br />
 
             <Typography variant="body2" gutterBottom>
-              Ruby
+              Python
             </Typography>
             <BorderLinearProgress
               className={classes.margin}

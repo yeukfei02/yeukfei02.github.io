@@ -65,18 +65,23 @@ function Description() {
               Hi, my name is Wu Yeuk Fei, Donald. I am a software developer.
             </Typography>
             <Typography variant="body1" gutterBottom>
-              I find I like programming when I studied in my final year. I feel
-              satisfied after I solve the problem and create something useful.
+              I feel satisfied after I solve the problem and create something
+              useful.
             </Typography>
             <Typography variant="body1" gutterBottom>
-              I can do web frontend, mobile app and backend API.
+              I can do frontend (web/mobile app) and backend api
+              (restapi/graphql).
             </Typography>
             <Typography variant="body1" gutterBottom>
               Email or contact me, I will tell you more.
             </Typography>
+            <Typography variant="body1" gutterBottom>
+              Thanks.
+            </Typography>
           </div>
         </Paper>
       </div>
+
       <div className="my-4 d-flex justify-content-center">
         <Paper className={`${classes.root} mx-4 w-75`}>
           <div>
@@ -108,6 +113,109 @@ function Description() {
           </div>
         </Paper>
       </div>
+
+      <div className="my-4 d-flex justify-content-center">
+        <Paper className={`${classes.root} mx-4 w-75`}>
+          <div>
+            <Typography variant="h6" gutterBottom>
+              Programming skills
+            </Typography>
+
+            <Typography variant="body2" gutterBottom>
+              JavaScript, TypeScript
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={90}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              Ruby
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={75}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              Python
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={65}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              Java, Kotlin
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={70}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              Go
+            </Typography>
+            <BorderLinearProgress
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={50}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              SQL
+            </Typography>
+            <BorderLinearProgress2
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={70}
+            />
+            <br />
+
+            <Typography variant="body2" gutterBottom>
+              Bash, Zsh, Fish
+            </Typography>
+            <BorderLinearProgress3
+              className={classes.margin}
+              variant="determinate"
+              color="secondary"
+              value={35}
+            />
+          </div>
+        </Paper>
+      </div>
+
+      <div className="my-4 d-flex justify-content-center">
+        <Paper className={`${classes.root} mx-4 w-75`}>
+          <div>
+            <Typography variant="h6" gutterBottom>
+              Technologies
+            </Typography>
+
+            <Typography variant="body1" gutterBottom>
+              Nodejs, Ruby on Rails, Deno, Serverless, GraphQL, React, Svelte,
+              React Native, Expo, Android, MySQL, Postgres, MongoDB, DynamoDB,
+              Redis, Docker, AWS, Firebase
+            </Typography>
+          </div>
+        </Paper>
+      </div>
+
       <div className="my-4 d-flex justify-content-center">
         <Paper className={`${classes.root} mx-4 w-75`}>
           <div>
@@ -137,6 +245,7 @@ function Description() {
           </div>
         </Paper>
       </div>
+
       <div className="my-4 d-flex justify-content-center">
         <Paper className={`${classes.root} mx-4 w-75`}>
           <div>
@@ -179,147 +288,6 @@ function Description() {
               <StarBorderIcon className="mr-1" />
               <div className="d-flex align-items-center">Mandarin</div>
             </div>
-          </div>
-        </Paper>
-      </div>
-      <div className="my-4 d-flex justify-content-center">
-        <Paper className={`${classes.root} mx-4 w-75`}>
-          <div>
-            <Typography variant="h6" gutterBottom>
-              Programming skills
-            </Typography>
-
-            <Typography variant="body2" gutterBottom>
-              JavaScript, TypeScript (React.js, React Native, Node.js)
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={90}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Serverless (AWS - Api Gateway, Lambda, Dynamodb, S3, CloudWatch,
-              CloudFormation, X-Ray, SES, SNS, SQS)
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={90}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Graphql (Apollo Server, Apollo Client)
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={75}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Ruby
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={75}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Python
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={70}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Java (Android, Kotlin)
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={70}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Go
-            </Typography>
-            <BorderLinearProgress
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={50}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Postgres
-            </Typography>
-            <BorderLinearProgress2
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={65}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              MongoDB
-            </Typography>
-            <BorderLinearProgress2
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={70}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Dynamodb
-            </Typography>
-            <BorderLinearProgress2
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={70}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Docker
-            </Typography>
-            <BorderLinearProgress3
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={40}
-            />
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              Unix Shell Scripting
-            </Typography>
-            <BorderLinearProgress3
-              className={classes.margin}
-              variant="determinate"
-              color="secondary"
-              value={30}
-            />
           </div>
         </Paper>
       </div>

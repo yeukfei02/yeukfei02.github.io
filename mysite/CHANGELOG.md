@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.8](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.3.7...v1.3.8) (2022-08-02)
+
+
+### Bug Fixes
+
+* fix folder name ([8cff9f9](https://github.com/yeukfei02/yeukfei02.github.io/commit/8cff9f9dff4d12c5fbbb6b17bfeb1dc47c71714b))
+* fix skills ui ([99049e9](https://github.com/yeukfei02/yeukfei02.github.io/commit/99049e97dc620110065ddfae36ef10b6a68ea085))
+* remove files ([888c1b0](https://github.com/yeukfei02/yeukfei02.github.io/commit/888c1b0097f415876dd9540a63e379f87a96e8de))
+* update build folder files ([5c69316](https://github.com/yeukfei02/yeukfei02.github.io/commit/5c6931615b7a24dd00320e23fd230e3d020769c2))
+* update link ([102001b](https://github.com/yeukfei02/yeukfei02.github.io/commit/102001bbff2d56cd6182410c8a6df4d4857c8c89))
+* update package.json ([8b9fb94](https://github.com/yeukfei02/yeukfei02.github.io/commit/8b9fb94a95a68490c64eef56d40df79c08506b89))
+
 ### [1.3.7](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.3.6...v1.3.7) (2021-12-01)
 
 

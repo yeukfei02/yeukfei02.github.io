@@ -5,21 +5,20 @@ My personal website
 ## Requirement
 
 - install yarn
-- install node
+- install node (v14+)
 
 ## Testing and run
 
 ```zsh
+// install node dependencies
 $ cd mysite
 $ yarn
 
 // development
 $ yarn start
 
-open localhost:3000
-
 // production
 $ yarn build
-
-create build folder for production
 ```
+
+open localhost:3000

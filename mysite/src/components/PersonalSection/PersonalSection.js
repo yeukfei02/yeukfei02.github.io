@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Tooltip from "@material-ui/core/Tooltip";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
@@ -13,6 +14,10 @@ import profilePic from "../../images/profile.png";
 function PersonalSection() {
   const handleFacebookClick = () => {
     window.open("https://www.facebook.com/yeukfei02");
+  };
+
+  const handleInstagramClick = () => {
+    window.open("https://www.instagram.com/yeukfei02");
   };
 
   const handleTwitterClick = () => {
@@ -67,6 +72,15 @@ function PersonalSection() {
       </Tooltip>
 
       <Tooltip title="yeukfei02" placement="bottom">
+        <InstagramIcon
+          style={{ cursor: "pointer", color: red[500] }}
+          className="mr-3"
+          fontSize="large"
+          onClick={handleInstagramClick}
+        />
+      </Tooltip>
+
+      <Tooltip title="yeukfei02" placement="bottom">
         <TwitterIcon
           style={{ cursor: "pointer", color: blue[500] }}
           className="mr-3"
@@ -77,7 +91,7 @@ function PersonalSection() {
 
       <Tooltip title="yeukfei02" placement="bottom">
         <GitHubIcon
-          style={{ cursor: "pointer", color: pink[500] }}
+          style={{ cursor: "pointer", color: "black" }}
           className="mr-3"
           fontSize="large"
           onClick={handleGithubClick}
@@ -95,7 +109,7 @@ function PersonalSection() {
 
       <Tooltip title="yeukfei02@gmail.com" placement="bottom">
         <EmailIcon
-          style={{ cursor: "pointer", color: red[500] }}
+          style={{ cursor: "pointer", color: pink[500] }}
           className="mr-3"
           fontSize="large"
           onClick={handleEmailClick}

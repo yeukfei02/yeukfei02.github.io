@@ -208,9 +208,9 @@ function Description() {
             </Typography>
 
             <Typography variant="body1" gutterBottom>
-              Nodejs, Ruby on Rails, Deno, Serverless, GraphQL, React, Svelte,
-              React Native, Expo, Android, MySQL, Postgres, MongoDB, DynamoDB,
-              Redis, Docker, AWS, Firebase
+              Nodejs, Nestjs, Deno, Ruby on Rails, Serverless, GraphQL, React,
+              Svelte, React Native, Expo, Android, MySQL, Postgres, MongoDB,
+              DynamoDB, Redis, Docker, AWS, Firebase
             </Typography>
           </div>
         </Paper>

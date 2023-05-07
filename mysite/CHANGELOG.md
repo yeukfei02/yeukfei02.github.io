@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.9](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.3.8...v1.3.9) (2023-05-07)
+
+
+### Bug Fixes
+
+* 🐛 update google analytic script tag ([d3b5182](https://github.com/yeukfei02/yeukfei02.github.io/commit/d3b5182bb0937dcc9ed0de1eb7b0594e131f4736))
+* update readme.md ([dd59bbb](https://github.com/yeukfei02/yeukfei02.github.io/commit/dd59bbbb0a000061c85da5ad7dbd282dc183870e))
+* update readme.md ([761d1cf](https://github.com/yeukfei02/yeukfei02.github.io/commit/761d1cfb45f2dfb1e806024a18965be815c3817a))
+* update skills ([8bccb99](https://github.com/yeukfei02/yeukfei02.github.io/commit/8bccb9947f9b4c4ab69ba0274d209211e907861f))
+
 ### [1.3.8](https://github.com/yeukfei02/yeukfei02.github.io/compare/v1.3.7...v1.3.8) (2022-08-02)
 
 

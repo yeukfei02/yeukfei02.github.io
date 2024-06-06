@@ -16,13 +16,13 @@ import Description from "./description/Description";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#3f51b5",
+      main: "#d78f88",
     },
     secondary: {
-      main: "#b3e5fc",
+      main: "#e7bbb7",
     },
     background: {
-      default: "#e0f7fa",
+      default: "#f7e8e7",
     },
   },
   typography: {

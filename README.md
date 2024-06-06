@@ -7,7 +7,7 @@ url: <https://yeukfei02.github.io/>
 ## Requirement
 
 - install yarn
-- install node (v14+)
+- install node (v14)
 
 ## Testing and run
 

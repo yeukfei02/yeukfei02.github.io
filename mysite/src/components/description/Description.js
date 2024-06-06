@@ -209,8 +209,9 @@ function Description() {
 
             <Typography variant="body1" gutterBottom>
               Nodejs, Nestjs, Deno, Ruby on Rails, Serverless Framework, AWS
-              CDK, GraphQL, React, Svelte, React Native, Expo, Android, MySQL,
-              Postgres, MongoDB, DynamoDB, Redis, Docker, AWS, Firebase
+              CDK, Terraform, GraphQL, React, Svelte, React Native, Expo,
+              Android, MySQL, Postgres, MongoDB, DynamoDB, Redis, Docker, AWS,
+              Firebase
             </Typography>
           </div>
         </Paper>

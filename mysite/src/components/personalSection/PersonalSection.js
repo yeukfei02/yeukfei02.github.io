@@ -55,10 +55,6 @@ function PersonalSection() {
       </Typography>
 
       <Typography variant="body1" gutterBottom>
-        Skype id: yeukfei02
-      </Typography>
-
-      <Typography variant="body1" gutterBottom>
         AngelList: angel.co/yeukfei02
       </Typography>
 

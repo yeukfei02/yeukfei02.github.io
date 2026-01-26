@@ -16,17 +16,17 @@ import Description from "./description/Description";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#d78f88",
+      main: "#90D5FF",
     },
     secondary: {
-      main: "#e7bbb7",
+      main: "#C5E3ED",
     },
     background: {
-      default: "#f7e8e7",
+      default: "#C5E3ED",
     },
   },
   typography: {
-    fontFamily: "'Hind', sans-serif",
+    fontFamily: "'Nunito', sans-serif",
   },
 });
 

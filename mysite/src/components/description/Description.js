@@ -139,7 +139,7 @@ function Description() {
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={75}
+              value={70}
             />
             <br />
 
@@ -150,7 +150,7 @@ function Description() {
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={65}
+              value={80}
             />
             <br />
 
@@ -161,7 +161,7 @@ function Description() {
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={70}
+              value={60}
             />
             <br />
 
@@ -194,7 +194,7 @@ function Description() {
               className={classes.margin}
               variant="determinate"
               color="secondary"
-              value={35}
+              value={30}
             />
           </div>
         </Paper>
